@@ -47,6 +47,9 @@ import { Application } from "./application";
     const paragraphElement= screen.getByText('All fields are mandatory');
     expect(paragraphElement).toBeInTheDocument();
 
+    const paragraphElement2= screen.getByText('fields',{exact:false});
+    expect(paragraphElement2).toBeInTheDocument();
+
     const nameElement4= await screen.getByDisplayValue("Krishna");
   expect(nameElement4).toBeInTheDocument();
 
