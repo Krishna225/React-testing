@@ -55,6 +55,7 @@
     }
   },
   "devDependencies": {
-    "msw": "^2.6.1"
+    "msw": "^2.6.1",
+    "text-encoding": "^0.7.0"
   }
 }

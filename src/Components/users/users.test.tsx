@@ -7,4 +7,11 @@ describe('users', ()=>{
        const textElement= screen.getByText('Users');
        expect(textElement).toBeInTheDocument();
     })
+
+    test('renders a list of users', async ()=>{
+        render(<Users/>);
+        const users= await screen.getAllByRole('listitem');
+        expect(users).toHaveLength(3);
+
+    })
 })
